@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-dace",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Babel presets for Dace",
   "main": "index.js",
   "scripts": {
