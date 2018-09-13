@@ -4,7 +4,7 @@
   "description": "Babel presets for Dace",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version && npm publish"
   },
   "repository": {
     "type": "git",
