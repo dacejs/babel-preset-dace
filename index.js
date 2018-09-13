@@ -1,9 +1,30 @@
+var values = envs => envs
+  .map(item => {
+    if (item === 'production') {
+      return 'and "' + item + '"';
+    }
+    return '"' + item + '"';
+  })
+  .join(", ");
+
+var envs = ['local', 'development', 'beta', 'production'];
+
+var env = process.env.BABEL_ENV || process.env.NODE_ENV;
+if (envs.indexOf(env) === -1) {
+  throw new Error(
+    'Using `babel-preset-dace` requires that you specify `NODE_ENV` or ' +
+      '`BABEL_ENV` environment variables. Valid values are ' + values(envs) +
+      '. Instead, received: ' + JSON.stringify(env) + '.'
+  );
+}
+
 var preset = {
   presets: [
     [require.resolve('babel-preset-env'), { modules: false }],
     require.resolve('babel-preset-react')
   ],
   plugins: [
+    require.resolve('loadable-components/babel'),
     require.resolve('babel-plugin-transform-decorators-legacy'),
     require.resolve('babel-plugin-add-module-exports'),
     require.resolve('babel-plugin-transform-class-properties'),
