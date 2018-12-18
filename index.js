@@ -12,7 +12,7 @@ module.exports = declare((api, opts) => {
     plugins: [
       require.resolve('@loadable/babel-plugin'),
       [require.resolve('@babel/plugin-proposal-decorators'), { "legacy": true }],
-      // require.resolve('babel-plugin-add-module-exports'),
+      require.resolve('@babel/plugin-transform-modules-commonjs'),
       [require.resolve('@babel/plugin-proposal-class-properties'), { "loose": false }],
       [require.resolve('@babel/plugin-syntax-object-rest-spread'), { useBuiltIns: true }],
       process.env.NODE_ENV === 'local' && require.resolve('@babel/plugin-transform-react-jsx-source'),
