@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/dacejs/babel-preset-dace/compare/v2.0.0...v2.0.1) (2018-12-18)
+
+
+### Bug Fixes
+
+* Add babel-plugin-add-module-exports ([65bfc40](https://github.com/dacejs/babel-preset-dace/commit/65bfc40))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/dacejs/babel-preset-dace/compare/v1.0.7...v2.0.0) (2018-12-18)
 
