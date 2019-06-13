@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/dacejs/babel-preset-dace/compare/v2.0.3...v2.1.0) (2019-06-13)
+
+
+### Features
+
+* 增加 `[@babel](https://github.com/babel)/plugin-proposal-optional-chaining` ([872245b](https://github.com/dacejs/babel-preset-dace/commit/872245b))
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/dacejs/babel-preset-dace/compare/v2.0.2...v2.0.3) (2018-12-21)
 
